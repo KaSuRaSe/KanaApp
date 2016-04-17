@@ -1,1 +1,2 @@
-# Nothing to ignore, yet
+# Ignoring svg files
+*.svg
