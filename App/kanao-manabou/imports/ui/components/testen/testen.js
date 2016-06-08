@@ -24,6 +24,7 @@ export default angular.module(name, [
 
 function config($stateProvider) {
 	'ngInject';
+
 	$stateProvider
 		.state('testen', {
 			url: '/home/testen',
