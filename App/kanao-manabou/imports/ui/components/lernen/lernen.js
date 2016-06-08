@@ -11,7 +11,8 @@ const name = 'lernen';
 // create a module
 export default angular.module(name, [
 	angularMeteor,
-	uiRouter
+	uiRouter,
+	Navigation
 ]).component(name, {
 	template,
 	controllerAs: name,

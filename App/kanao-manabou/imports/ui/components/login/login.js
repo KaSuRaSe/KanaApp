@@ -1,4 +1,10 @@
-#login.js here
+import angular from 'angular';
+import angularMeteor from 'angular-meteor';
+import uiRouter from 'angular-ui-router';
+
+import template from './login.html';
+
+class Login {}
 
 const name = 'login';
 
