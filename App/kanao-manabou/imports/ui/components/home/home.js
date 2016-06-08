@@ -18,7 +18,7 @@ export default angular.module(name, [
 	uiRouter
 ]).component(name, {
 	template,
-	controllerAs: name
+	controllerAs: name,
 	controller: Home
 })
 	.config(config);

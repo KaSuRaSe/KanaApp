@@ -4,6 +4,7 @@ import uiRouter from 'angular-ui-router';
 
 import template from './kanaoManabou.html';
 import { name as Navigation } from '../navigation/navigation';
+import { name as Home } from '../home/home';
 
 class KanaoManabou {}
 
@@ -12,7 +13,8 @@ const name = 'kanao-manabou';
 export default angular.module(name, [
 	angularMeteor,
 	uiRouter,
-	Navigation
+	Navigation,
+	Home
 ]).component(name, {
 	template,
 	controllerAS: name,
