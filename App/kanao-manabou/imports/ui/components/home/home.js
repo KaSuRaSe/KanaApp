@@ -5,6 +5,7 @@ import uiRouter from 'angular-ui-router';
 import template from './home.html';
 import { name as Lernen } from '../lernen/lernen';
 import { name as Testen } from '../testen/testen';
+import { name as Login } from '../login/login'
 
 class Home {
 	constructor($scope, $reactive) {
