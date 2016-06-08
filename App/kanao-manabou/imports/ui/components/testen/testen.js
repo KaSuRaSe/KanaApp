@@ -4,14 +4,17 @@ import uiRouter from 'angular-ui-router';
 
 import template from './testen.html';
 
-class Testen {}
+class Testen {
+	constructor() {
+		'ngInject';
+	}
+}
 
 const name = 'testen';
 
 export default angular.module(name, [
 	angularMeteor,
-	uiRouter,
-	Navigation
+	uiRouter
 ]).component(name, {
 	template,
 	controllerAs: name,

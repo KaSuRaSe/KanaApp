@@ -3,10 +3,14 @@ import angularMeteor from 'angular-meteor';
 import uiRouter from 'angular-ui-router';
 
 import template from './home.html';
+import { name as Lernen } from '../lernen/lernen';
+import { name as Testen } from '../testen/testen';
 
 class Home {
 	constructor($scope, $reactive) {
 		'ngInject';
+
+		$reactive(this).attach($scope);
 	}
 }
 
@@ -31,3 +35,5 @@ function config($stateProvider) {
 			template: '<home></home>'
 		})
 }
+
+console.log(template);

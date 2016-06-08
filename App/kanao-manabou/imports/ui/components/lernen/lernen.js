@@ -4,15 +4,20 @@ import uiRouter from 'angular-ui-router';
 
 import template from './lernen.html';
 
-class Lernen {}
+class Lernen {
+	constructor($stateParams, $scope, $reactive) {
+		'ngInject';
+
+		$reactive(this).attach($scope);
+	}
+}
 
 const name = 'lernen';
 
 // create a module
 export default angular.module(name, [
 	angularMeteor,
-	uiRouter,
-	Navigation
+	uiRouter
 ]).component(name, {
 	template,
 	controllerAs: name,
