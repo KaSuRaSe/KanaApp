@@ -7,7 +7,7 @@ import { name as Navigation } from '../navigation/navigation';
 
 class KanaoManabou {}
 
-const name = 'kanaoManabou';
+const name = 'kanao-manabou';
 
 export default angular.module(name, [
 	angularMeteor,
