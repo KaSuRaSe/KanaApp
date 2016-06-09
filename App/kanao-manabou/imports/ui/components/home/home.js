@@ -6,7 +6,6 @@ import template from './home.html';
 import { name as Lernen } from '../lernen/lernen';
 import { name as Testen } from '../testen/testen';
 import { name as Login } from '../login/login';
-import { name as Navigation } from '../navigation/navigation';
 
 class Home {
 	constructor($scope, $reactive) {
@@ -22,7 +21,6 @@ const name = 'home';
 export default angular.module(name, [
 	angularMeteor,
 	uiRouter,
-	Navigation,
 	Lernen,
 	Testen,
 	Login
@@ -43,11 +41,6 @@ function config($stateProvider, $locationProvider, $urlRouterProvider) {
 		.state('home', {
 			url: '/home',
 			template: '<home></home>'
-		})
-		
-		.state('home.lernen', {
-			url: '/lernen',
-			template: '<lernen></lernen>'
 		})
 }
 
