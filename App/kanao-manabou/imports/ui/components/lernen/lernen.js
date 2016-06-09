@@ -28,8 +28,5 @@ export default angular.module(name, [
 function config($stateProvider, $urlRouterProvider) {
 	'ngInject';
 
-	$stateProvider.state('lernen', {
-		url: '/home/lernen',
-		template: '<lernen></lernen>'
-	});
+	
 }

@@ -5,7 +5,8 @@ import uiRouter from 'angular-ui-router';
 import template from './home.html';
 import { name as Lernen } from '../lernen/lernen';
 import { name as Testen } from '../testen/testen';
-import { name as Login } from '../login/login'
+import { name as Login } from '../login/login';
+import { name as Navigation } from '../navigation/navigation';
 
 class Home {
 	constructor($scope, $reactive) {
@@ -20,7 +21,11 @@ const name = 'home';
 // create a module
 export default angular.module(name, [
 	angularMeteor,
-	uiRouter
+	uiRouter,
+	Navigation,
+	Lernen,
+	Testen,
+	Login
 ]).component(name, {
 	template,
 	controllerAs: name,
@@ -28,11 +33,20 @@ export default angular.module(name, [
 })
 	.config(config);
 
-function config($stateProvider, $urlRouterProvider) {
+function config($stateProvider, $locationProvider, $urlRouterProvider) {
 	'ngInject';
+
+	$locationProvider.html5Mode(true);
+	$urlRouterProvider.otherwise('/home');
+
 	$stateProvider
 		.state('home', {
 			url: '/home',
+			template: '<home></home>'
+		})
+		
+		.state('home.lernen', {
+			url: '/lernen',
 			template: '<lernen></lernen>'
 		})
 }
