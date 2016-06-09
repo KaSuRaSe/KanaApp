@@ -35,7 +35,8 @@ body {
 .buttonscontainer {
   background: white;
   position: absolute;
-  top: 50%;
+  width: 100%;
+  top: 60%;
 }
 
 h1 {
@@ -59,12 +60,12 @@ form {
   background: white;
   position: relative;
   display: inline-block;
-  min-width: 100%;
-  height: 50%;
+  width: 100%;
+  height: 350px;
   font-size: 250%;
   text-align: center;
   border: none;
-  border-bottom: #e8e8e8 solid 2px;
+  border-bottom: #e8e8e8 solid 5px;
   transition-duration: 0.4s;
 }
 
@@ -92,8 +93,8 @@ button:hover, button:active{
 }
 
 img.cat {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 
 img.menupic {
