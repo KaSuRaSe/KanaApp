@@ -26,15 +26,13 @@ export default angular.module(name, [
 	controllerAs: name,
 	controller: Home
 })
-	.config(config);
-
-function config($stateProvider, $urlRouterProvider) {
+	.config( function ($stateProvider, $urlRouterProvider) {
 	'ngInject';
 	$stateProvider
 		.state('home', {
 			url: '/home',
 			template: '<lernen></lernen>'
 		})
-}
+});
 
 console.log(template);
