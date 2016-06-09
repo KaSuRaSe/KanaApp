@@ -28,12 +28,12 @@ export default angular.module(name, [
 })
 	.config(config);
 
-function config($stateProvider) {
+function config($stateProvider, $urlRouterProvider) {
 	'ngInject';
 	$stateProvider
 		.state('home', {
 			url: '/home',
-			template: '<home></home>'
+			template: '<lernen></lernen>'
 		})
 }
 
