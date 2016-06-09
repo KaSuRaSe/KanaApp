@@ -43,5 +43,3 @@ function config($stateProvider, $locationProvider, $urlRouterProvider) {
 			template: '<home></home>'
 		})
 });
-
-console.log(template);
