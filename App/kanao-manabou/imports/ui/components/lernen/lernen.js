@@ -22,14 +22,12 @@ export default angular.module(name, [
 	template,
 	controllerAs: name,
 	controller: Lernen
-})
-	.config(config);
- 
-function config($stateProvider, $urlRouterProvider) {
-	'ngInject';
+}).config(function ($stateProvider, $urlRouterProvider) {
+		'ngInject';
 
-	$stateProvider.state('lernen', {
-		url: '/home/lernen',
-		template: '<lernen></lernen>'
-	});
-}
+		$stateProvider.state('home/lernen', {
+			url: '/lernen',
+			template: '<lernen></lernen>'
+		})
+	
+});

@@ -5,13 +5,16 @@ import uiRouter from 'angular-ui-router';
 import template from './testen.html';
 
 class Testen {
-	constructor() {
+	constructor($stateParams, $scope, $reactive) {
 		'ngInject';
+
+		$reactive(this).attach($scope);
 	}
 }
 
 const name = 'testen';
 
+// create a module
 export default angular.module(name, [
 	angularMeteor,
 	uiRouter
@@ -19,15 +22,12 @@ export default angular.module(name, [
 	template,
 	controllerAs: name,
 	controller: Testen
-})
-	.config(config);
+}).config(function ($stateProvider, $urlRouterProvider) {
+		'ngInject';
 
-function config($stateProvider) {
-	'ngInject';
-
-	$stateProvider
-		.state('testen', {
-			url: '/home/testen',
+		$stateProvider.state('home/testen', {
+			url: '/testen',
 			template: '<testen></testen>'
-	});
-}
+		})
+	
+});

@@ -4,10 +4,17 @@ import uiRouter from 'angular-ui-router';
 
 import template from './login.html';
 
-class Login {}
+class Login {
+	constructor($stateParams, $scope, $reactive) {
+		'ngInject';
+
+		$reactive(this).attach($scope);
+	}
+}
 
 const name = 'login';
 
+// create a module
 export default angular.module(name, [
 	angularMeteor,
 	uiRouter
@@ -15,14 +22,12 @@ export default angular.module(name, [
 	template,
 	controllerAs: name,
 	controller: Login
-})
-	.config(config);
+}).config(function ($stateProvider, $urlRouterProvider) {
+		'ngInject';
 
-function config($stateProvider) {
-	'ngInject';
-	$stateProvider
-		.state('login', {
-			url: '/home/login',
+		$stateProvider.state('home/login', {
+			url: '/login',
 			template: '<login></login>'
-	});
-}
+		})
+	
+});
