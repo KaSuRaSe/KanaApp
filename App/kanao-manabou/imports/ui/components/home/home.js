@@ -42,4 +42,6 @@ function config($stateProvider, $locationProvider, $urlRouterProvider) {
 			url: '/home',
 			template: '<home></home>'
 		})
-});
+}
+
+//console.log(template);

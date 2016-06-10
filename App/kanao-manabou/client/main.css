@@ -2,7 +2,7 @@
 /* Bodystuff */
 body {
   font-family: sans-serif;
-  background-color: #fff;
+  background-color: #57ede2;
   background-attachment: fixed;
 
   position: absolute;
@@ -14,54 +14,100 @@ body {
   padding: 0;
   margin: 0;
 
-  font-size: 24px;
+  font-size: 2em;
+  color: #32222f;
 }
 
 /* Containers */
 
-.container {
-  min-width: 100%;
-  margin: 0 auto;
-  min-height: 100%;
-  background: white;
-}
-
-
 .logo {
   background: #57ede2;
   color: #343a46;
-  padding: 20%;
-  position: relative;
+
+  padding-top: 10%;
+  position: absolute;
+  top: 0;
+  
+  left: 0;
+  right: 0;
+  
   text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .buttonscontainer {
   background: white;
   position: absolute;
   width: 100%;
-  top: 60%;
+  top: 70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-h1 {
-  font-size: 300%;
-  margin: 0;
-  margin-bottom: 10px;
-  margin-left: 10%;
-  display: inline-block;
-  margin-right: 1em;
+.listcontainer {
+  background: white;
+  position: absolute;
+  top: 10%;
+  width: 100%;  
   text-align: center;
+}
+
+.testcontainer {
+  background: white;
+  padding-left: 10px;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.navigation {
+  background: #57ede2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.nav_head {
+  padding-top: 3%;
+}
+
+/* Table */
+
+table, td, tr {
+  border: none;
+  border-width: 0;
+  border-collapse: collapse;
+  width: 100%
+}
+
+td {
+  width: 19%;
+}
+
+.kanalist {
+  text-align: center;
+  background: #32222f;
+  color: #57ede2;
+  height: 50px;
+  font-size: 60%;
 }
 
 /* Buttons */
 
 .mainbuttons {
-  padding: 5% 0 12% 0;
+  padding: 5% 0 5% 0;
   background: white;
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 350px;
-  font-size: 250%;
+  height: 50%;
+  font-size: 110%;
   text-align: center;
   border: none;
   border-bottom: #e8e8e8 solid 5px;
@@ -69,11 +115,10 @@ h1 {
 }
 
 .loginbutton {
-  padding: 1% 0  0;
   background: #57ede2;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   display: block;
   width: 75px;
   height: 75px;
@@ -97,39 +142,23 @@ button:hover, button:active{
   color: #57ede2;
 }
 
-/* Navigationbar */
-
-.navigation {
-  background: #57ede2;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 10%;
-  text-align: center;
-  font-size: 350%;
-}
-
-.nav_head {
-  padding-top: 3%;
-}
-
 /* Images */
 
 img.cat {
-  height: 80%;
   width: 80%;
+  height: auto;
 }
 
 img.menupic {
-  height: 75px;
-  width: 75px;
+  width: 80%;
+  height: auto;
 }
 
 img.backpic {
-  height: 75px;
-  width: 75px;
+  width: 80%;
+  height: auto;
 }
 
-@media (max-width: 600px) {
-  /*CSS when screen width is max 600px*/
+@media screen and (width: 1080px) {
+  /*CSS when screen width is max 1000px*/
 }
