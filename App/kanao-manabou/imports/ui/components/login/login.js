@@ -17,7 +17,8 @@ const name = 'login';
 // create a module
 export default angular.module(name, [
 	angularMeteor,
-	uiRouter
+	uiRouter,
+	'accounts.ui'
 ]).component(name, {
 	template,
 	controllerAs: name,

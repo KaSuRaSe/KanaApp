@@ -56,11 +56,12 @@ body {
 
 .testcontainer {
   background: white;
+  padding-left: 10px;
   position: absolute;
   top: 10%;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .navigation {

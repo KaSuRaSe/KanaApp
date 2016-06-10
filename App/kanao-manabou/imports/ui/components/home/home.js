@@ -44,4 +44,4 @@ function config($stateProvider, $locationProvider, $urlRouterProvider) {
 		})
 }
 
-console.log(template);
+//console.log(template);
