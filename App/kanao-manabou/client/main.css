@@ -61,7 +61,7 @@ body {
   top: 10%;
   bottom: 0;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .navigation {
@@ -75,6 +75,31 @@ body {
 
 .nav_head {
   padding-top: 3%;
+}
+
+.kana {
+  font-size: 700%;
+  padding-top: 3%;
+}
+
+.maru {
+  font-size: 700%;
+  padding-top: 3%;
+  color: #00ff00;
+}
+
+.batsu {
+  font-size: 700%;
+  padding-top: 3%;
+  color: #ff0000;
+}
+
+.testTable{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 /* Table */
@@ -135,6 +160,15 @@ td {
   height: 100%;
   border: none;
   display: inline-block;
+}
+
+.testbutton {
+  font-size: 160%;
+  width: 100%;
+  height: 150px;
+  border: none;
+  background-color: #57ede2;
+  top-margin: 70%;
 }
 
 button:hover, button:active{

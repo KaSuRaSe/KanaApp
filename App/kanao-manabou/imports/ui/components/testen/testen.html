@@ -2,6 +2,34 @@
 	<button ui-sref="home" class="backbutton"><img src="img/back.png" class="backpic" /></button>
 	<div class="nav_head">Testen</div>
 </div>
-<div class="testcontainer">
-	Hier kommt der Test hin
+<div class="testcontainer"  ng-app="abc">
+
+	<div ng-show="kana">
+		<p class="kana">{{zeichen}}</p>	
+	</div>
+	<div ng-show="maru">
+		<p class="maru">◯</p>
+	</div>
+	<div ng-show="batsu">
+		<p class="batsu">×</p>
+	</div>
+
+
+	<table class="testTable">
+		<tr>
+			<td><button ng-click="testFunc(0)" class="testbutton">{{button.eins}}</button>
+			</td>
+			<td><button ng-click="testFunc(1)" class="testbutton">{{button.zwei}}</button>
+			</td>
+		</tr>
+		<tr>
+			<td><button ng-click="testFunc(2)" class="testbutton">{{button.drei}}</button>
+			</td>
+			<td><button ng-click="testFunc(3)" class="testbutton">{{button.vier}}</button>
+			</td>
+		</tr>
+	</table>
+
+	
 </div>
+<script type="text/javascript"></script>
