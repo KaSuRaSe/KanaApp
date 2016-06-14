@@ -15,7 +15,7 @@ class Testen {
 		$scope.button={eins:'',zwei:'',drei:'',vier:''};
 		$scope.count = Math.floor(Math.random()*4);
 		$scope.hiragana=['あ','い','う','え','お','か','き','く','け','こ','さ','し','す','せ','そ','た','ち','つ','て','と','な','に','ぬ','ね','の','は','ひ','ふ','へ','ほ','ま','み','む','め','も','や','ゆ','よ','ら','り','る','れ','ろ','わ','を','ん'];
-		$scope.romaji=['a','i','u','e','o','ka','ki','ku','ke','ko','sa','shi','su','se','so','ta','chi','tsu','te','to','na','ni','nu','ne','no','ha','hi','fu','he','ho','ma','mi','mu','me','mo','ya','yu','yo','ra','ri','ru','re','ro','wa','wo','n'];
+		$scope.romaji=['A','I','U','E','O','Ka','Ki','Ku','Ke','Ko','Sa','Shi','Su','Se','So','Ta','Chi','Tsu','Te','To','Na','Ni','Nu','Ne','No','Ha','Hi','Fu','He','Ho','Ma','Mi','Mu','Me','Mo','Ya','Yu','Yo','Ra','Ri','Ru','Re','Ro','Wa','Wo','N'];
 		$scope.random=[0,0,0,0];
 		$scope.count = Math.floor(Math.random()*4);
 

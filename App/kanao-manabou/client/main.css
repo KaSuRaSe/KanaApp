@@ -54,9 +54,18 @@ body {
   text-align: center;
 }
 
-.testcontainer {
+.logincontainer {
   background: white;
   padding-left: 10px;
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.testcontainer {
+  background: white;
   position: absolute;
   top: 10%;
   bottom: 0;
@@ -77,29 +86,17 @@ body {
   padding-top: 3%;
 }
 
-.kana {
+.kana, .maru, .batsu{
   font-size: 700%;
-  padding-top: 3%;
 }
 
 .maru {
-  font-size: 700%;
-  padding-top: 3%;
   color: #00ff00;
+  font-style: bold;
 }
 
 .batsu {
-  font-size: 700%;
-  padding-top: 3%;
   color: #ff0000;
-}
-
-.testTable{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
 }
 
 /* Table */
@@ -121,6 +118,14 @@ td {
   color: #57ede2;
   height: 50px;
   font-size: 60%;
+}
+
+.testTable{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 /* Buttons */
@@ -162,13 +167,14 @@ td {
   display: inline-block;
 }
 
-.testbutton {
-  font-size: 160%;
+.testbuttons {
+  background: #32222f;
+  color: #57ede2;
   width: 100%;
-  height: 150px;
+  height: 100px;
+  font-size: 120%;
+  text-align: center;
   border: none;
-  background-color: #57ede2;
-  top-margin: 70%;
 }
 
 button:hover, button:active{
